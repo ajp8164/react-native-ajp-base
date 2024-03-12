@@ -1,11 +1,10 @@
-import '@react-native-firebase/app';
+// import '@react-native-firebase/app';
 
 import { AJPElements, log } from '@react-native-ajp-elements/core';
 
 import { AppError } from 'lib/errors';
 import { BackHandler } from 'react-native';
 import { GoogleSignin } from '@react-native-google-signin/google-signin';
-import { RNFileCache } from 'react-native-file-cache';
 import { appConfig } from 'config';
 // import firestore from '@react-native-firebase/firestore';
 import { initPushNotifications } from 'lib/notifications';
@@ -51,9 +50,6 @@ export const initApp = async (): Promise<InitStatus> => {
     GoogleSignin.configure({
       webClientId: appConfig.firebaseOauthClientId,
     });
-
-    // Load cached file indexes.
-    RNFileCache.load();
 
     return InitStatus.Success;
 

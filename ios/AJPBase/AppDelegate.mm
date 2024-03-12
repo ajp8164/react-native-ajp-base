@@ -5,13 +5,11 @@
 
 #import "RNBootSplash.h" 
 #import <FBSDKCoreKit/FBSDKCoreKit-swift.h>
-#import <GoogleMaps/GoogleMaps.h>
 
 @implementation AppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-  [GMSServices provideAPIKey:@"AIzaSyCzFAQMTJeY2LjTmF5AuGyczMc6mh9Zs6U"];
   [FIRApp configure];
   [[FBSDKApplicationDelegate sharedInstance] application:application
                        didFinishLaunchingWithOptions:launchOptions];

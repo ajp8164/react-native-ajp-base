@@ -70,11 +70,6 @@ target 'AJPBase' do
 
   pod 'RNBootSplash', :path => '../node_modules/react-native-bootsplash'
 
-  # React Native Maps dependencies
-  # The following line is only needed if building on an Apple silicon Mac without rosetta.
-  # pod 'Google-Maps-iOS-Utils', :git => 'https://github.com/Simon-TechForm/google-maps-ios-utils.git', :branch => 'feat/support-apple-silicon'
-  pod 'react-native-google-maps', :path => '../node_modules/react-native-maps'
-
   target 'AJPBaseTests' do
     inherit! :complete
     # Pods for testing
